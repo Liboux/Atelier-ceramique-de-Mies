@@ -1,0 +1,164 @@
+/* Style général */
+body {
+    background-color: #ffffff;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Titre principal */
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color:#000000;
+    text-underline-position: above;
+    box-shadow: 0 20px 0 rgb(220, 219, 219), 0 -20px 0 rgb(220, 219, 219);
+    background-color: rgb(220, 219, 219);
+    padding: 10px 0;
+}
+
+/* Barre de navigation */
+.option_en-tête {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    padding: 20px 20px; /* Augmente la taille verticalement et horizontalement */
+    font-size: 22px;
+    color: white;
+    height: 80px; /* Hauteur fixe pour la barre de navigation, ajustez selon vos besoins */
+}
+
+/* Conteneur pour le logo */
+.logo_site {
+    flex: 0 0 auto; /* Évite le redimensionnement du conteneur */
+    margin-right: 20px; /* Espace entre le logo et les éléments de navigation */
+    display: flex; /* Active le modèle flexbox */
+    align-items: center; /* Centre le logo verticalement */
+}
+
+/* Style de l'image du logo */
+.logo-img {
+    max-height: 90px; /* Limite la hauteur du logo à 90px */
+    width: auto; /* Conserve les proportions du logo */
+    border-radius: 8px;
+}
+
+/* Conteneur pour les éléments de la barre de navigation */
+.nav-items {
+    flex: 1; /* Prend l'espace restant disponible */
+    display: flex;
+    justify-content: flex-end; /* Aligne les éléments de la navigation à droite */
+    align-items: center; /* Centre verticalement les éléments */
+}
+
+/* Style pour les éléments de la barre de navigation */
+.option_en-tête li {
+    display: inline-block;
+    margin-right: 50px; /* Augmente l'espacement entre les éléments */
+}
+
+/* Style pour les liens dans la barre de navigation */
+.option_en-tête a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Effet au survol des éléments de la barre de navigation */
+.option_en-tête li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Sous-titre */
+.sous-titre {
+    font-size: 90px;
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+    color: #333;
+    margin: 40px 0;
+}
+
+.intro {
+    font-size: 20px;
+    background-color: #fcd397;
+    text-align:center;
+}
+
+.titre {
+    margin-left: 20px;
+    width: 50%;
+}
+
+.text1{
+    margin-left: 20px;
+}
+
+.text2{
+    margin-left: 20px;
+}
+
+.list{
+    background-color: #ebf1e4;
+}
+
+h3{
+    margin-left: 20px;
+}
+
+/* Styles pour le footer */
+.site-footer {
+    background-color: #2b2929;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #acd0f8;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.footer-copyright {
+    font-size: 12px;
+    color: #ccc;
+}

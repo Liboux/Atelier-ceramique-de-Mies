@@ -1,0 +1,194 @@
+/* Style général */
+body {
+    background-color: #9bcbec;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Titre principal */
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color:#000000;
+    text-underline-position: above;
+    box-shadow: 0 20px 0 rgb(220, 219, 219), 0 -20px 0 rgb(220, 219, 219);
+    background-color: rgb(220, 219, 219);
+    padding: 10px 0;
+}
+
+/* Barre de navigation */
+.option_en-tête {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    padding: 20px 20px; /* Augmente la taille verticalement et horizontalement */
+    font-size: 22px;
+    color: white;
+    height: 80px; /* Hauteur fixe pour la barre de navigation, ajustez selon vos besoins */
+}
+
+/* Conteneur pour le logo */
+.logo_site {
+    flex: 0 0 auto; /* Évite le redimensionnement du conteneur */
+    margin-right: 20px; /* Espace entre le logo et les éléments de navigation */
+    display: flex; /* Active le modèle flexbox */
+    align-items: center; /* Centre le logo verticalement */
+}
+
+/* Style de l'image du logo */
+.logo-img {
+    max-height: 90px; /* Limite la hauteur du logo à 90px */
+    width: auto; /* Conserve les proportions du logo */
+    border-radius: 8px;
+}
+
+/* Conteneur pour les éléments de la barre de navigation */
+.nav-items {
+    flex: 1; /* Prend l'espace restant disponible */
+    display: flex;
+    justify-content: flex-end; /* Aligne les éléments de la navigation à droite */
+    align-items: center; /* Centre verticalement les éléments */
+}
+
+/* Style pour les éléments de la barre de navigation */
+.option_en-tête li {
+    display: inline-block;
+    margin-right: 50px; /* Augmente l'espacement entre les éléments */
+}
+
+/* Style pour les liens dans la barre de navigation */
+.option_en-tête a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Effet au survol des éléments de la barre de navigation */
+.option_en-tête li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Section À propos */
+.about-section {
+    padding: 50px 20px;
+    background-color: #e2ecf0;
+}
+
+/* Contenu de la section À propos */
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Conteneur principal pour diviser la page en deux moitiés */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Section gauche contenant le texte */
+.left-content {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 1.8;
+}
+
+/* Style pour le texte dans la partie gauche */
+.about-text {
+    font-size: 22px; /* Taille du texte à 25px */
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Section droite contenant les images */
+.right-content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Style pour les images dans la partie droite */
+.right-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Image alignée à droite */
+.align-right {
+    float: right;
+    width: 50%; /* Agrandit la largeur de l'image */
+    margin: 0 0 20px 20px; /* Marge pour espacer l'image du texte */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour l'esthétique */
+}
+
+/* Styles pour le footer */
+.site-footer {
+    background-color: #2b2929;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #acd0f8;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.footer-copyright {
+    font-size: 12px;
+    color: #ccc;
+}

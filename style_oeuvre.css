@@ -1,0 +1,282 @@
+
+
+
+
+/* Style général */
+body {
+    background-color: #f3ebeb;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Titre principal */
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color:#000000;
+    text-underline-position: above;
+    box-shadow: 0 20px 0 rgb(220, 219, 219), 0 -20px 0 rgb(220, 219, 219);
+    background-color: rgb(220, 219, 219);
+    padding: 10px 0;
+}
+
+/* Barre de navigation */
+.option_en-tête {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    background-color: #333;
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    height: 80px;
+}
+
+/* Conteneur pour le logo */
+.logo_site {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Style de l'image du logo */
+.logo-img {
+    max-height: 60px;
+    width: auto;
+    border-radius: 8px;
+}
+
+/* Conteneur pour les éléments de la barre de navigation */
+.nav-items {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Barre de navigation */
+.option_en-tête {
+    display: flex;
+    align-items: center; /* Centre verticalement les éléments */
+    list-style: none;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    padding: 20px 20px; /* Augmente la taille verticalement et horizontalement */
+    font-size: 22x;
+    color: white;
+    height: 80px; /* Hauteur fixe pour la barre de navigation, ajustez selon vos besoins */
+}
+
+/* Conteneur pour le logo */
+.logo_site {
+    flex: 0 0 auto; /* Évite le redimensionnement du conteneur */
+    margin-right: 20px; /* Espace entre le logo et les éléments de navigation */
+    display: flex; /* Active le modèle flexbox */
+    align-items: center; /* Centre le logo verticalement */
+}
+
+/* Style de l'image du logo */
+.logo-img {
+    max-height: 90px; /* Limite la hauteur du logo à 50px */
+    width: auto; /* Conserve les proportions du logo */
+
+}
+
+/* Conteneur pour les éléments de la barre de navigation */
+.nav-items {
+    flex: 1; /* Prend l'espace restant disponible */
+    display: flex;
+    justify-content: flex-end; /* Aligne les éléments de la navigation à droite */
+    align-items: center; /* Centre verticalement les éléments */
+    
+}
+
+/* Style pour les éléments de la barre de navigation */
+.option_en-tête li {
+    display: inline-block;
+    margin-right: 50px; /* Augmente l'espacement entre les éléments */
+}
+
+.intro {
+    font-size : 30px;
+    font-family:'Courier New', Courier, monospace;
+    text-align:left;
+}
+
+/* Sous-titre */
+.sous-titre {
+    font-size: 90px;
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+    color: #333;
+    margin: 40px 0;
+}
+
+/* Style pour les liens dans la barre de navigation */
+.option_en-tête a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Effet au survol des éléments de la barre de navigation */
+.option_en-tête li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.texte_sous-titre {
+    font-size: 30px;
+    margin-left: 30px;
+}
+.text-content {
+    margin-left: 30px;
+}
+
+/* Style pour aligner le contenu à gauche et l'image à droite */
+.oeuvre-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 30px;
+}
+
+/* Style pour la partie texte */
+.left-content {
+    width: 50%;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.temps_de_travail {
+    font-family:'Times New Roman', Times, serif;
+    background-color: #302929; /* Couleur de fond personnalisée */
+    padding: 20px;            /* Espace interne pour aérer le texte */
+    color: white;             /* Couleur du texte pour qu'il soit bien visible */
+    line-height: 1.6;         /* Hauteur de ligne pour un meilleur espacement du texte */
+    border-radius: 8px;       /* Coins arrondis pour un effet plus doux */
+    width: 100%;              /* Prend toute la largeur de la section gauche */
+    margin-bottom: 20px;      /* Espace sous le bloc pour le séparer du contenu suivant */
+}
+
+/* Style pour la partie image */
+.right-content {
+    width: 40%;
+    margin-right: 9%;
+    width: 30%;
+
+}
+
+.right-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre */
+}
+
+.oeuvre-container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 30px;
+}
+
+/* Style pour la partie texte */
+.left-content2 {
+    width: 50%;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.temps_de_travail2 {
+    font-family:'Times New Roman', Times, serif;
+    background-color: #302929; /* Couleur de fond personnalisée */
+    padding: 20px;            /* Espace interne pour aérer le texte */
+    color: white;             /* Couleur du texte pour qu'il soit bien visible */
+    line-height: 1.6;         /* Hauteur de ligne pour un meilleur espacement du texte */
+    border-radius: 8px;       /* Coins arrondis pour un effet plus doux */
+    width: 100%;              /* Prend toute la largeur de la section gauche */
+    margin-bottom: 20px;      /* Espace sous le bloc pour le séparer du contenu suivant */
+}
+
+/* Style pour la partie image */
+.right-content2 {
+    width: 40%;
+    margin-right: 9%;
+    width: 30%;
+
+}
+
+.right-content2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre */
+}
+h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Styles pour le footer */
+.site-footer {
+    background-color: #2b2929;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #acd0f8;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.footer-copyright {
+    font-size: 12px;
+    color: #ccc;
+}

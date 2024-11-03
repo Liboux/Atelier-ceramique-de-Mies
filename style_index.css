@@ -1,0 +1,281 @@
+
+
+/* Style général */
+body {
+    background-color: rgba(237, 240, 226, 0.92);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Titre principal */
+h1 {
+    text-align: center;
+    font-size: 40px;
+    text-underline-position: above;
+    box-shadow: 0 20px 0 rgb(220, 219, 219), 0 -20px 0 rgb(220, 219, 219);
+    background-color: rgb(220, 219, 219);
+    padding: 10px 0;
+}
+
+/* Barre de navigation */
+.option_en-tête {
+    display: flex;
+    align-items: center; /* Centre verticalement les éléments */
+    list-style: none;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    padding: 20px 20px; /* Augmente la taille verticalement et horizontalement */
+    font-size: 23x;
+    color: white;
+    height: 80px; /* Hauteur fixe pour la barre de navigation, ajustez selon vos besoins */
+}
+
+/* Conteneur pour le logo */
+.logo_site {
+    flex: 0 0 auto; /* Évite le redimensionnement du conteneur */
+    margin-right: 20px; /* Espace entre le logo et les éléments de navigation */
+    display: flex; /* Active le modèle flexbox */
+    align-items: center; /* Centre le logo verticalement */
+}
+
+/* Style de l'image du logo */
+.logo-img {
+    max-height: 90px; /* Limite la hauteur du logo à 50px */
+    width: auto; /* Conserve les proportions du logo */
+    border-radius: 8px;
+}
+
+/* Conteneur pour les éléments de la barre de navigation */
+.nav-items {
+    flex: 1; /* Prend l'espace restant disponible */
+    display: flex;
+    justify-content: flex-end; /* Aligne les éléments de la navigation à droite */
+    align-items: center; /* Centre verticalement les éléments */
+    
+}
+
+/* Style pour les éléments de la barre de navigation */
+.option_en-tête li {
+    display: inline-block;
+    margin-right: 50px; /* Augmente l'espacement entre les éléments */
+}
+
+/* Style pour les liens dans la barre de navigation */
+.option_en-tête a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Effet au survol des éléments de la barre de navigation */
+.option_en-tête li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Sous-titre */
+.sous-titre {
+    font-size: 90px;
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+    color: #333;
+    margin: 40px 0;
+}
+
+/* Conteneur principal pour diviser la page en deux moitiés */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligne le contenu en haut de la page */
+    padding: 0;
+    margin: 0;
+    width: 100vw; /* Assure que le conteneur occupe toute la largeur de la vue */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+
+/* Section gauche contenant le texte et l'image 2 */
+.left-content {
+    width: 50%; /* Occupe 50% de la largeur de la page */
+    display: flex;
+    flex-direction: column; /* Arrange les éléments en colonne */
+    align-items: flex-start; /* Aligne les éléments à gauche */
+    padding: 20px;
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+    margin-right: 30px; /* Augmente l'espace entre le texte et l'image de droite */
+}
+
+/* Style pour le texte dans la partie gauche */
+.align-left {
+    font-size: 20px;
+    background-color: #515050;
+    padding: 20px;
+    color: white;
+    line-height: 1.6;
+    border-radius: 0px;
+    width: 100%; /* Prend toute la largeur de la section gauche */
+    margin-bottom: 10px; /* Réduit l'espace sous le texte pour rapprocher l'image du canard */
+}
+
+/* Style pour l'image 2 canard sous le texte */
+.image2 {
+    width: 100%; /* Assure que l'image prend toute la largeur disponible */
+    text-align: center; /* Centre l'image horizontalement */
+    margin-top: 0; /* Assure que l'image est collée au texte au-dessus */
+}
+
+.image2 img {
+    max-width: 100%; /* Assure que l'image ne dépasse pas la largeur du conteneur */
+    height: auto; /* Maintient les proportions de l'image */
+    border-radius: 10px; /* Ajoute des coins arrondis à l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet esthétique */
+}
+
+/* Section droite contenant l'image 1 */
+.right-content {
+    width: 50%; /* Occupe 50% de la largeur de la page */
+    padding: 0; /* Pas de padding autour de l'image */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+    margin-left: 30px; /* Ajoute un espace à gauche de l'image */
+}
+.right-content img {
+    width: calc(100% - 20px); /* Réduit la largeur de l'image de droite pour faire de la place pour la marge */
+    height: auto; /* Maintient les proportions de l'image */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet esthétique */
+    margin-right: 20px; /* Marge à droite pour éviter que l'image ne touche le bord */
+}
+/* Galerie d'images */
+.gallery-section {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Effet de zoom sur les images */
+.zoomed {
+    transform: scale(1.5);
+    transition: transform 0.3s;
+    z-index: 10;
+    position: relative;
+}
+
+/* Bouton de retour en haut de page */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Caché par défaut */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
+
+/* Style des boutons de filtre */
+.filter-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4364f7;
+    color: #fdf7f7;
+    transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+    background-color: #4263f8;
+}
+
+
+/* Styles pour le footer */
+.site-footer {
+    background-color: #2b2929;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #acd0f8;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.footer-copyright {
+    font-size: 12px;
+    color: #ccc;
+}

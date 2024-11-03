@@ -1,0 +1,242 @@
+
+
+
+
+/* Style général */
+body {
+    background-color: #e7faee;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Titre principal */
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color:#000000;
+    text-underline-position: above;
+    box-shadow: 0 20px 0 rgb(220, 219, 219), 0 -20px 0 rgb(220, 219, 219);
+    background-color: rgb(220, 219, 219);
+    padding: 10px 0;
+}
+
+/* Barre de navigation */
+.option_en-tête {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    background-color: #333;
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    height: 80px;
+}
+
+/* Conteneur pour le logo */
+.logo_site {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Style de l'image du logo */
+.logo-img {
+    max-height: 60px;
+    width: auto;
+    border-radius: 8px;
+}
+
+/* Conteneur pour les éléments de la barre de navigation */
+.nav-items {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Barre de navigation */
+.option_en-tête {
+    display: flex;
+    align-items: center; /* Centre verticalement les éléments */
+    list-style: none;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    padding: 20px 20px; /* Augmente la taille verticalement et horizontalement */
+    font-size: 22x;
+    color: white;
+    height: 80px; /* Hauteur fixe pour la barre de navigation, ajustez selon vos besoins */
+}
+
+/* Conteneur pour le logo */
+.logo_site {
+    flex: 0 0 auto; /* Évite le redimensionnement du conteneur */
+    margin-right: 20px; /* Espace entre le logo et les éléments de navigation */
+    display: flex; /* Active le modèle flexbox */
+    align-items: center; /* Centre le logo verticalement */
+}
+
+/* Style de l'image du logo */
+.logo-img {
+    max-height: 90px; /* Limite la hauteur du logo à 50px */
+    width: auto; /* Conserve les proportions du logo */
+
+}
+
+/* Conteneur pour les éléments de la barre de navigation */
+.nav-items {
+    flex: 1; /* Prend l'espace restant disponible */
+    display: flex;
+    justify-content: flex-end; /* Aligne les éléments de la navigation à droite */
+    align-items: center; /* Centre verticalement les éléments */
+    
+}
+
+/* Style pour les éléments de la barre de navigation */
+.option_en-tête li {
+    display: inline-block;
+    margin-right: 50px; /* Augmente l'espacement entre les éléments */
+}
+
+.intro {
+    font-size : 30px;
+    font-family:'Courier New', Courier, monospace;
+    text-align:left;
+}
+
+/* Sous-titre */
+.sous-titre {
+    font-size: 90px;
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+    color: #333;
+    margin: 40px 0;
+}
+
+/* Style pour les liens dans la barre de navigation */
+.option_en-tête a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Effet au survol des éléments de la barre de navigation */
+.option_en-tête li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Section À propos */
+.about-section {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+/* Contenu de la section À propos */
+.about-content {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Texte de la section À propos */
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+
+
+/* Conteneur principal pour la galerie de photos */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espace entre les photos */
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Style pour chaque élément photo */
+.photo-item {
+    flex: 0 1 calc(30% - 10px); /* 50% de largeur moins l'espace */
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+/* Style pour l'image à l'intérieur de chaque élément photo */
+.photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Effet de zoom au survol */
+.photo-item:hover {
+    transform: scale(1.02);
+}
+
+/* Styles pour le footer */
+.site-footer {
+    background-color: #2b2929;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #acd0f8;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.footer-copyright {
+    font-size: 12px;
+    color: #ccc;
+}
